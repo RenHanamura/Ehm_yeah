@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+sans:wght@200&display=swap');
+
+body{
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    
+}
+
+ul{
+    position: relative;
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+.hue{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    cursor: pointer;
+    margin: 0 4px;
+    border-radius: 20px;
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+    animation: glow 1.5s linear infinite;
+} 
+@keyframes glow{
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
